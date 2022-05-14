@@ -7,4 +7,8 @@ app.get('/', (req, res) =>{
     const {link} = req.query; 
     res.redirect(link);
 })
+app.get('/link', (req, res) =>{
+    const {link} = req.query; 
+    res.redirect(link);
+})
 app.listen(process.env.PORT, () => console.log(`Example app listening on port ${port}!`))
